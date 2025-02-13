@@ -1,101 +1,100 @@
 import Image from "next/image";
-
-export default function Home() {
+import Link from "next/link";
+import Social from "./_components/Social";
+import Navbar from "./_components/Navbar";
+import Famous from "./_components/Famous";
+import Footer from "./_components/Footer";
+export default function Homepage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Navbar></Navbar>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Main Section */}
+      <main className="relative w-full h-[900px]">
+        <div className="relative w-full h-full ">
+          <Image
+            src="/photoHafez.svg"
+            alt="Refugee Wave Background"
+            layout="fill"
+            objectFit="cover"
+            className="w-full "
+          />
+        </div>
+
+        {/* Overlay Text with Blur Effect */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <h1 className="text-black text-4xl md:text-6xl font-bold text-center px-4">
+            Human beings are members of a whole, in creation of one essence and
+            soul.If one members is affiliated with pain, other members uneasy
+            will remain. If you have no sympathy for human pain. The name of
+            human you cannot retain. 'Hafez'
+          </h1>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      {/*/section 1 */}
+      <section className="relative w-full h-[800px] mt-10">
+        {/* Background Image */}
+        <div className="relative w-full h-full">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/aboutUs.svg" // Ensure this file is in the public folder
+            alt="Refugee Phenomenon"
+            layout="fill"
+            objectFit="cover"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+
+        <div className="absolute inset-0 flex items-center justify-center  z-10">
+          <h2 className="text-black text-3xl md:text-5xl font-semibold text-center px-4">
+            This ancient refugee phenomenon will never end, but it will be
+            formed for the powerful to take the most advantage of this human
+            phenomenon.
+          </h2>
+        </div>
+      </section>
+
+      {/* Note from the Publisher */}
+      <section className="bg-gray-200 py-16 px-6 mt-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl font-bold mb-6">
+            A Short Note from the Publisher
+          </h3>
+          <p className="text-lg leading-relaxed text-gray-800">
+            A refugee, conventionally speaking, is a person who has lost the
+            protection of their country of origin and who cannot or is unwilling
+            to return there due to well-founded fear of persecution.
+            <br />
+            <br />
+            Migrants, unlike refugees who cannot safely return home, can return
+            home if they wish. This distinction is important for governments
+            since countries handle migrants under their own immigration laws and
+            processes. Many people abuse the refugee law for migration.
+            <br />
+            <br />
+            It is unfortunate that many politicians support this abuse in
+            refugee-receiving countries to strengthen their puppet governments
+            against the protesting people who are really in danger every day and
+            have no way to flee from danger.
+            <br />
+            <br />
+            This also creates a wrong concept in public opinion in the
+            refugee-receiving country.
+            <br />
+            <br />
+            In the end, I believe the refugee-receiving countries should notice
+            that this behavior is not supporting human rights but supporting
+            criminality in both countries.
+            <br />
+            <br />
+            Here, I created this place for exchanging opinions and ideas that
+            can help to stop criminality for a better world for everyone in this
+            life.
+          </p>
+        </div>
+      </section>
+
+      {/* Famous Refugee Section */}
+      <Famous></Famous>
+      <Footer></Footer>
+    </>
   );
 }
