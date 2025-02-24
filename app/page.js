@@ -4,6 +4,7 @@ import Social from "./_components/Social";
 import Navbar from "./_components/Navbar";
 import Famous from "./_components/Famous";
 import Footer from "./_components/Footer";
+import AboutUs from "../public/aboutUS.svg";
 export default function Home() {
   return (
     <>
@@ -42,7 +43,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="relative w-full h-full">
           <Image
-            src="/aboutUs.svg" // Ensure this file is in the public folder
+            src={AboutUs} // this file is in the public folder
             alt="Refugee Phenomenon"
             layout="fill"
             objectFit="cover"
