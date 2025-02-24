@@ -4,7 +4,7 @@ export default function News() {
   return (
     <>
       <Navbar></Navbar>
-      <p>News</p>
+      <p className="text-9xl">News</p>
       <Footer></Footer>
     </>
   );

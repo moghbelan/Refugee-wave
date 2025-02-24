@@ -4,7 +4,7 @@ import Social from "./_components/Social";
 import Navbar from "./_components/Navbar";
 import Famous from "./_components/Famous";
 import Footer from "./_components/Footer";
-export default function Homepage() {
+export default function Home() {
   return (
     <>
       <Navbar></Navbar>
@@ -22,17 +22,23 @@ export default function Homepage() {
         </div>
 
         {/* Overlay Text with Blur Effect */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-black text-4xl md:text-6xl font-bold text-center px-4">
-            Human beings are members of a whole, in creation of one essence and
-            soul.If one members is affiliated with pain, other members uneasy
-            will remain. If you have no sympathy for human pain. The name of
-            human you cannot retain. 'Hafez'
-          </h1>
+        <div className="absolute bottom-10 inset-x-0 flex items-center justify-center z-10 px-4">
+          <div className="bg-white/50 w-[90%] max-w-[1200px] min-h-[200px] md:min-h-[270px] rounded-[16px] flex items-center justify-center p-6 shadow-lg">
+            <h1 className="text-black text-2xl md:text-4xl font-bold text-center leading-relaxed">
+              Human beings are members of a whole, in creation of one essence
+              and soul. If one member is afflicted with pain, other members
+              uneasy will remain. If you have no sympathy for human pain, the
+              name of human you cannot retain.
+              <br />
+              <span className="text-lg md:text-xl font-semibold mt-2 block">
+                — Hafez
+              </span>
+            </h1>
+          </div>
         </div>
       </main>
       {/*/section 1 */}
-      <section className="relative w-full h-[800px] mt-10">
+      <section className="relative w-full h-[800px] ">
         {/* Background Image */}
         <div className="relative w-full h-full">
           <Image
@@ -43,17 +49,19 @@ export default function Homepage() {
           />
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center  z-10">
-          <h2 className="text-black text-3xl md:text-5xl font-semibold text-center px-4">
-            This ancient refugee phenomenon will never end, but it will be
-            formed for the powerful to take the most advantage of this human
-            phenomenon.
-          </h2>
+        <div className="absolute top-[50px] inset-x-0 flex items-center justify-center z-10 px-4">
+          <div className="bg-white/10 w-[90%] max-w-[1200px] h-[270px] rounded-[16px] flex items-center justify-center p-6 shadow-lg">
+            <h2 className="text-black text-2xl md:text-4xl font-semibold text-center leading-relaxed">
+              This ancient refugee phenomenon will never end, but it will be
+              formed for the powerful to take the most advantage of this human
+              phenomenon.
+            </h2>
+          </div>
         </div>
       </section>
 
       {/* Note from the Publisher */}
-      <section className="bg-gray-200 py-16 px-6 mt-10">
+      <section className="bg-gray-200 py-16 px-6 ">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-6">
             A Short Note from the Publisher

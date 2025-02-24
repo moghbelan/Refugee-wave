@@ -4,7 +4,7 @@ export default function Article() {
   return (
     <>
       <Navbar></Navbar>
-      <p>Article</p>
+      <p className="text-9xl">Article</p>
       <Footer></Footer>
     </>
   );

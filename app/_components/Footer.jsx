@@ -1,4 +1,4 @@
-import Link from "next/link"; // ✅ Import Link
+import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
@@ -6,7 +6,12 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start px-6">
         {/* Left Side */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-xl font-bold mb-2">Refugee Wave</h2>
+          <Link
+            href="/"
+            className="text-xl font-bold mb-2  hover:text-blue-500"
+          >
+            Refugee Wave
+          </Link>
           <h3 className="text-lg font-semibold">Contact Address</h3>
           <p>
             Email:{" "}
@@ -16,7 +21,7 @@ export default function Footer() {
           </p>
           {/* Social Media Icons */}
 
-          <p className="text-sm text-gray-600 mt-4">
+          <p className="text-sm text-gray-600 mt-20">
             © 2024 Refugee Wave. All rights reserved.
           </p>
         </div>
@@ -27,6 +32,11 @@ export default function Footer() {
             Subscribe
           </button>
           <ul className="mt-4 space-y-2 text-lg font-medium">
+            <li>
+              <Link href="//" className="text-gray-700 hover:text-blue-500">
+                Home
+              </Link>
+            </li>
             <li>
               <Link href="/news" className="text-gray-700 hover:text-blue-500">
                 News

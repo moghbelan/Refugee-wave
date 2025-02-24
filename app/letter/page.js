@@ -4,7 +4,7 @@ export default function Letter() {
   return (
     <>
       <Navbar></Navbar>
-      <p>Letter</p>
+      <p className="text-9xl">Letter</p>
       <Footer></Footer>
     </>
   );
