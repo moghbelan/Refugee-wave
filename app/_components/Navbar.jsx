@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md p-4">
+    <header className="bg-gradient-to-r from-orange-50 via-slate-400 via-40%  to-neutral-200 shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
