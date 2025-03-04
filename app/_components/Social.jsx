@@ -3,8 +3,9 @@ import Twitter from "../../public/X.svg";
 import TikTok from "../../public/TikTok.svg";
 import Instagram from "../../public/Instagram.svg";
 import Facebook from "../../public/Facebook.svg";
-
+import { useSession, signOut } from "next-auth/react";
 export default function Social() {
+  const { data: session } = useSession();
   return (
     <div className="flex space-x-4 mt-3">
       {session && (
