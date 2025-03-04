@@ -32,7 +32,7 @@ export default function Home() {
               name of human you cannot retain.
               <br />
               <span className="text-lg md:text-xl font-semibold mt-2 block">
-                Hafez
+                Saadi Shirazi
               </span>
             </h1>
           </div>

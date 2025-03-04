@@ -46,32 +46,43 @@ export default function Footer() {
           )}
 
           <ul className="mt-4 space-y-2 text-lg font-medium">
-            <li>
-              <Link href="//" className="text-gray-700 hover:text-blue-500">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/news" className="text-gray-700 hover:text-blue-500">
-                News
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/article"
-                className="text-gray-700 hover:text-blue-500"
-              >
-                Article
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/letter"
-                className="text-gray-700 hover:text-blue-500"
-              >
-                Letter
-              </Link>
-            </li>
+            {session && (
+              <li>
+                <Link href="//" className="text-gray-700 hover:text-blue-500">
+                  Home
+                </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link
+                  href="/news"
+                  className="text-gray-700 hover:text-blue-500"
+                >
+                  News
+                </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link
+                  href="/article"
+                  className="text-gray-700 hover:text-blue-500"
+                >
+                  Article
+                </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link
+                  href="/letter"
+                  className="text-gray-700 hover:text-blue-500"
+                >
+                  Letter
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>
